@@ -16,16 +16,15 @@ export const Header = () => {
     }
   };
 
-  return (
-    <header className="tailwind aqui">
+  return (/*bg-transparent*/
+    <header className=" w-full h-11 bg-black flex text-white items-center justify-between">
       {/*Essa image vai a logo*/}
-      <img className="tailwind aqui" src="img/logo.png" alt="Logo" />
+      <img className="ml-40"
+       src="img/logo.png" alt="Logo" />
 
       {/*Essa nav é a div responsavel pelos botões de navegação*/}
-      <nav className="tailwind aqui">
-        <p onClick={() => handleChangeColor()} className={`tailwind wind ${color}`}>
-          Opção 1
-        </p>
+      <nav className="flex mr-40 gap-10 text-stone-700">
+        <p className=""> Opção 1</p>
         <p className="tailwind aqui"> Opção 2</p>
         <p className="tailwind aqui"> Opção 3</p>
       </nav>
